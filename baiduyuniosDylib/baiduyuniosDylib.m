@@ -26,23 +26,23 @@
 CHConstructor{
     NSLog(INSERT_SUCCESS_WELCOME);
     
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-        
-#ifndef __OPTIMIZE__
-        CYListenServer(6666);
-
-        MDCycriptManager* manager = [MDCycriptManager sharedInstance];
-        [manager loadCycript:NO];
-
-        NSError* error;
-        NSString* result = [manager evaluateCycript:@"UIApp" error:&error];
-        NSLog(@"result: %@", result);
-        if(error.code != 0){
-            NSLog(@"error: %@", error.localizedDescription);
-        }
-#endif
-        
-    }];
+//    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+//
+//#ifndef __OPTIMIZE__
+//        CYListenServer(6666);
+//
+//        MDCycriptManager* manager = [MDCycriptManager sharedInstance];
+//        [manager loadCycript:NO];
+//
+//        NSError* error;
+//        NSString* result = [manager evaluateCycript:@"UIApp" error:&error];
+//        NSLog(@"result: %@", result);
+//        if(error.code != 0){
+//            NSLog(@"error: %@", error.localizedDescription);
+//        }
+//#endif
+//
+//    }];
     
     Class tarClass = NSClassFromString(@"DownOperation");
     [tarClass hookSelectorWithBlock:PAIR_LIST {
@@ -83,7 +83,7 @@ CHConstructor{
         BLOCK_CAST ^BOOL (id slf) {
             NSLog(@"hook isSVIP");
             
-            return YES;
+            return NO;
         },
         NIL_PAIR}];
     tarClass = NSClassFromString(@"SettingManage");
@@ -95,6 +95,7 @@ CHConstructor{
             NSLog(@"origin name is:%@",Speed);
             return [NSNumber numberWithLong:10*1024*1024];//上限10M每秒
         },
+        
         NIL_PAIR}];
     tarClass = NSClassFromString(@"NSOperationQueue");
     [tarClass hookSelectorWithBlock:PAIR_LIST {
@@ -111,6 +112,12 @@ CHConstructor{
             
         },
         NIL_PAIR}];
+    
+    
+    
+    
+    
+    
 }
 
 
