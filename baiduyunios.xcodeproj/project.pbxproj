@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F58D3BB20FF4CB4008F3767 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F58D3BA20FF4CB4008F3767 /* MDConfig.plist */; };
+		9F58D3C520FF4CB5008F3767 /* libbaiduyuniosDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F58D3C420FF4CB5008F3767 /* libbaiduyuniosDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9F58D3CA20FF4CB5008F3767 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58D3C920FF4CB5008F3767 /* JavaScriptCore.framework */; };
+		9F58D3CC20FF4CB5008F3767 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58D3CB20FF4CB5008F3767 /* Foundation.framework */; };
+		9F58D3CE20FF4CB5008F3767 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58D3CD20FF4CB5008F3767 /* UIKit.framework */; };
+		9F58D3D320FF4CB5008F3767 /* baiduyuniosDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3D220FF4CB5008F3767 /* baiduyuniosDylib.mm */; };
+		9F58D3D620FF4CB5008F3767 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3D520FF4CB5008F3767 /* MDConfigManager.h */; };
+		9F58D3D820FF4CB5008F3767 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3D720FF4CB5008F3767 /* MDConfigManager.m */; };
+		9F58D3DA20FF4CB5008F3767 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3D920FF4CB5008F3767 /* MDCycriptManager.h */; };
+		9F58D3DC20FF4CB5008F3767 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3DB20FF4CB5008F3767 /* MDCycriptManager.m */; };
+		9F58D3DE20FF4CB5008F3767 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3DD20FF4CB5008F3767 /* MDMethodTrace.h */; };
+		9F58D3E020FF4CB5008F3767 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3DF20FF4CB5008F3767 /* MDMethodTrace.m */; };
+		9F58D3E220FF4CB5008F3767 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3E120FF4CB5008F3767 /* ANYMethodLog.h */; };
+		9F58D3E420FF4CB5008F3767 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3E320FF4CB5008F3767 /* ANYMethodLog.m */; };
+		9F58D3E720FF4CB5008F3767 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3E620FF4CB5008F3767 /* LLDBTools.h */; };
+		9F58D3E920FF4CB5008F3767 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3E820FF4CB5008F3767 /* LLDBTools.mm */; };
+		9F58D3EE20FF4CB5008F3767 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3ED20FF4CB5008F3767 /* AntiAntiDebug.m */; };
+		9F58D3F120FF4CB5008F3767 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3F020FF4CB5008F3767 /* fishhook.c */; };
+		9F58D3F320FF4CB5008F3767 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3F220FF4CB5008F3767 /* fishhook.h */; };
+		9F58D3F520FF4CB5008F3767 /* baiduyuniosDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F58D3F420FF4CB5008F3767 /* baiduyuniosDylib.h */; };
+		9F58D3F720FF4CB5008F3767 /* baiduyuniosDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F58D3F620FF4CB5008F3767 /* baiduyuniosDylib.m */; };
+		9F9885EC2100274800214EF7 /* BDUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885E92100274800214EF7 /* BDUser.h */; };
+		9F9885ED2100274800214EF7 /* TransLogRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885EA2100274800214EF7 /* TransLogRecorder.h */; };
+		9F9885EE2100274800214EF7 /* VIPExpirationManage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885EB2100274800214EF7 /* VIPExpirationManage.h */; };
+		9F9885F221002F4700214EF7 /* DownOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885EF21002F4700214EF7 /* DownOperation.h */; };
+		9F9885F321002F4700214EF7 /* SettingManage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885F021002F4700214EF7 /* SettingManage.h */; };
+		9F9885F421002F4700214EF7 /* FolderDownOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885F121002F4700214EF7 /* FolderDownOperation.h */; };
+		9F9885F821003CA300214EF7 /* NSObject+kmHookBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9885F621003CA300214EF7 /* NSObject+kmHookBlock.h */; };
+		9F9885F921003CA300214EF7 /* NSObject+kmHookBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9885F721003CA300214EF7 /* NSObject+kmHookBlock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F58D3C620FF4CB5008F3767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F58D3A720FF4CB4008F3767 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F58D3C320FF4CB5008F3767;
+			remoteInfo = baiduyuniosDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F58D3AF20FF4CB4008F3767 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F58D3C520FF4CB5008F3767 /* libbaiduyuniosDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F58D3B220FF4CB4008F3767 /* baiduyunios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baiduyunios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F58D3B520FF4CB4008F3767 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		9F58D3B620FF4CB4008F3767 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		9F58D3B820FF4CB4008F3767 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		9F58D3BA20FF4CB4008F3767 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		9F58D3BD20FF4CB4008F3767 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		9F58D3BE20FF4CB4008F3767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F58D3C420FF4CB5008F3767 /* libbaiduyuniosDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libbaiduyuniosDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F58D3C920FF4CB5008F3767 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9F58D3CB20FF4CB5008F3767 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F58D3CD20FF4CB5008F3767 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F58D3D120FF4CB5008F3767 /* baiduyuniosDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = baiduyuniosDylib.xm; path = Logos/baiduyuniosDylib.xm; sourceTree = "<group>"; };
+		9F58D3D220FF4CB5008F3767 /* baiduyuniosDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = baiduyuniosDylib.mm; path = Logos/baiduyuniosDylib.mm; sourceTree = "<group>"; };
+		9F58D3D520FF4CB5008F3767 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		9F58D3D720FF4CB5008F3767 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		9F58D3D920FF4CB5008F3767 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		9F58D3DB20FF4CB5008F3767 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		9F58D3DD20FF4CB5008F3767 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		9F58D3DF20FF4CB5008F3767 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		9F58D3E120FF4CB5008F3767 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		9F58D3E320FF4CB5008F3767 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		9F58D3E620FF4CB5008F3767 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		9F58D3E820FF4CB5008F3767 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		9F58D3EB20FF4CB5008F3767 /* baiduyuniosDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baiduyuniosDylib-Prefix.pch"; sourceTree = "<group>"; };
+		9F58D3ED20FF4CB5008F3767 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		9F58D3F020FF4CB5008F3767 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		9F58D3F220FF4CB5008F3767 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		9F58D3F420FF4CB5008F3767 /* baiduyuniosDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baiduyuniosDylib.h; sourceTree = "<group>"; };
+		9F58D3F620FF4CB5008F3767 /* baiduyuniosDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baiduyuniosDylib.m; sourceTree = "<group>"; };
+		9F9885E92100274800214EF7 /* BDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDUser.h; sourceTree = "<group>"; };
+		9F9885EA2100274800214EF7 /* TransLogRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransLogRecorder.h; sourceTree = "<group>"; };
+		9F9885EB2100274800214EF7 /* VIPExpirationManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPExpirationManage.h; sourceTree = "<group>"; };
+		9F9885EF21002F4700214EF7 /* DownOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownOperation.h; sourceTree = "<group>"; };
+		9F9885F021002F4700214EF7 /* SettingManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingManage.h; sourceTree = "<group>"; };
+		9F9885F121002F4700214EF7 /* FolderDownOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderDownOperation.h; sourceTree = "<group>"; };
+		9F9885F621003CA300214EF7 /* NSObject+kmHookBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+kmHookBlock.h"; sourceTree = "<group>"; };
+		9F9885F721003CA300214EF7 /* NSObject+kmHookBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+kmHookBlock.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F58D3AC20FF4CB4008F3767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F58D3C120FF4CB5008F3767 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F58D3CA20FF4CB5008F3767 /* JavaScriptCore.framework in Frameworks */,
+				9F58D3CE20FF4CB5008F3767 /* UIKit.framework in Frameworks */,
+				9F58D3CC20FF4CB5008F3767 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F58D3A620FF4CB4008F3767 = {
+			isa = PBXGroup;
+			children = (
+				9F58D3B420FF4CB4008F3767 /* baiduyunios */,
+				9F58D3CF20FF4CB5008F3767 /* baiduyuniosDylib */,
+				9F58D3C820FF4CB5008F3767 /* Frameworks */,
+				9F58D3B320FF4CB4008F3767 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F58D3B320FF4CB4008F3767 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3B220FF4CB4008F3767 /* baiduyunios.app */,
+				9F58D3C420FF4CB5008F3767 /* libbaiduyuniosDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F58D3B420FF4CB4008F3767 /* baiduyunios */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3B520FF4CB4008F3767 /* icon.png */,
+				9F58D3B620FF4CB4008F3767 /* Target.plist */,
+				9F58D3BE20FF4CB4008F3767 /* Info.plist */,
+				9F58D3B720FF4CB4008F3767 /* Scripts */,
+				9F58D3B920FF4CB4008F3767 /* Config */,
+				9F58D3BC20FF4CB4008F3767 /* TargetApp */,
+			);
+			path = baiduyunios;
+			sourceTree = "<group>";
+		};
+		9F58D3B720FF4CB4008F3767 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3B820FF4CB4008F3767 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		9F58D3B920FF4CB4008F3767 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3BA20FF4CB4008F3767 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		9F58D3BC20FF4CB4008F3767 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3BD20FF4CB4008F3767 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		9F58D3C820FF4CB5008F3767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3C920FF4CB5008F3767 /* JavaScriptCore.framework */,
+				9F58D3CB20FF4CB5008F3767 /* Foundation.framework */,
+				9F58D3CD20FF4CB5008F3767 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F58D3CF20FF4CB5008F3767 /* baiduyuniosDylib */ = {
+			isa = PBXGroup;
+			children = (
+				9F9885F521003CA300214EF7 /* kmHookBlock */,
+				9F9885E82100274800214EF7 /* panSource */,
+				9F58D3F420FF4CB5008F3767 /* baiduyuniosDylib.h */,
+				9F58D3F620FF4CB5008F3767 /* baiduyuniosDylib.m */,
+				9F58D3D020FF4CB5008F3767 /* Logos */,
+				9F58D3D420FF4CB5008F3767 /* Config */,
+				9F58D3E520FF4CB5008F3767 /* Tools */,
+				9F58D3EC20FF4CB5008F3767 /* AntiAntiDebug */,
+				9F58D3EF20FF4CB5008F3767 /* fishhook */,
+				9F58D3EA20FF4CB5008F3767 /* Supporting Files */,
+			);
+			path = baiduyuniosDylib;
+			sourceTree = "<group>";
+		};
+		9F58D3D020FF4CB5008F3767 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3D120FF4CB5008F3767 /* baiduyuniosDylib.xm */,
+				9F58D3D220FF4CB5008F3767 /* baiduyuniosDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		9F58D3D420FF4CB5008F3767 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3D520FF4CB5008F3767 /* MDConfigManager.h */,
+				9F58D3D720FF4CB5008F3767 /* MDConfigManager.m */,
+				9F58D3D920FF4CB5008F3767 /* MDCycriptManager.h */,
+				9F58D3DB20FF4CB5008F3767 /* MDCycriptManager.m */,
+				9F58D3DD20FF4CB5008F3767 /* MDMethodTrace.h */,
+				9F58D3DF20FF4CB5008F3767 /* MDMethodTrace.m */,
+				9F58D3E120FF4CB5008F3767 /* ANYMethodLog.h */,
+				9F58D3E320FF4CB5008F3767 /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		9F58D3E520FF4CB5008F3767 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3E620FF4CB5008F3767 /* LLDBTools.h */,
+				9F58D3E820FF4CB5008F3767 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		9F58D3EA20FF4CB5008F3767 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3EB20FF4CB5008F3767 /* baiduyuniosDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F58D3EC20FF4CB5008F3767 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3ED20FF4CB5008F3767 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		9F58D3EF20FF4CB5008F3767 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				9F58D3F020FF4CB5008F3767 /* fishhook.c */,
+				9F58D3F220FF4CB5008F3767 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		9F9885E82100274800214EF7 /* panSource */ = {
+			isa = PBXGroup;
+			children = (
+				9F9885EF21002F4700214EF7 /* DownOperation.h */,
+				9F9885F121002F4700214EF7 /* FolderDownOperation.h */,
+				9F9885F021002F4700214EF7 /* SettingManage.h */,
+				9F9885E92100274800214EF7 /* BDUser.h */,
+				9F9885EA2100274800214EF7 /* TransLogRecorder.h */,
+				9F9885EB2100274800214EF7 /* VIPExpirationManage.h */,
+			);
+			path = panSource;
+			sourceTree = "<group>";
+		};
+		9F9885F521003CA300214EF7 /* kmHookBlock */ = {
+			isa = PBXGroup;
+			children = (
+				9F9885F621003CA300214EF7 /* NSObject+kmHookBlock.h */,
+				9F9885F721003CA300214EF7 /* NSObject+kmHookBlock.m */,
+			);
+			path = kmHookBlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F58D3C220FF4CB5008F3767 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F58D3F520FF4CB5008F3767 /* baiduyuniosDylib.h in Headers */,
+				9F9885F421002F4700214EF7 /* FolderDownOperation.h in Headers */,
+				9F58D3DA20FF4CB5008F3767 /* MDCycriptManager.h in Headers */,
+				9F9885F821003CA300214EF7 /* NSObject+kmHookBlock.h in Headers */,
+				9F58D3DE20FF4CB5008F3767 /* MDMethodTrace.h in Headers */,
+				9F9885EC2100274800214EF7 /* BDUser.h in Headers */,
+				9F9885F321002F4700214EF7 /* SettingManage.h in Headers */,
+				9F58D3E720FF4CB5008F3767 /* LLDBTools.h in Headers */,
+				9F58D3D620FF4CB5008F3767 /* MDConfigManager.h in Headers */,
+				9F58D3E220FF4CB5008F3767 /* ANYMethodLog.h in Headers */,
+				9F9885F221002F4700214EF7 /* DownOperation.h in Headers */,
+				9F58D3F320FF4CB5008F3767 /* fishhook.h in Headers */,
+				9F9885EE2100274800214EF7 /* VIPExpirationManage.h in Headers */,
+				9F9885ED2100274800214EF7 /* TransLogRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F58D3B120FF4CB4008F3767 /* baiduyunios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F58D3FD20FF4CB5008F3767 /* Build configuration list for PBXNativeTarget "baiduyunios" */;
+			buildPhases = (
+				9F58D3AB20FF4CB4008F3767 /* Sources */,
+				9F58D3AC20FF4CB4008F3767 /* Frameworks */,
+				9F58D3AD20FF4CB4008F3767 /* ShellScript */,
+				9F58D3AE20FF4CB4008F3767 /* Resources */,
+				9F58D3AF20FF4CB4008F3767 /* CopyFiles */,
+				9F58D3B020FF4CB4008F3767 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F58D3C720FF4CB5008F3767 /* PBXTargetDependency */,
+			);
+			name = baiduyunios;
+			productName = baiduyunios;
+			productReference = 9F58D3B220FF4CB4008F3767 /* baiduyunios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F58D3C320FF4CB5008F3767 /* baiduyuniosDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F58D3FA20FF4CB5008F3767 /* Build configuration list for PBXNativeTarget "baiduyuniosDylib" */;
+			buildPhases = (
+				9F58D3BF20FF4CB5008F3767 /* ShellScript */,
+				9F58D3C020FF4CB5008F3767 /* Sources */,
+				9F58D3C120FF4CB5008F3767 /* Frameworks */,
+				9F58D3C220FF4CB5008F3767 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baiduyuniosDylib;
+			productName = baiduyuniosDylib;
+			productReference = 9F58D3C420FF4CB5008F3767 /* libbaiduyuniosDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F58D3A720FF4CB4008F3767 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = allen;
+				TargetAttributes = {
+					9F58D3B120FF4CB4008F3767 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9F58D3C320FF4CB5008F3767 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F58D3AA20FF4CB4008F3767 /* Build configuration list for PBXProject "baiduyunios" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F58D3A620FF4CB4008F3767;
+			productRefGroup = 9F58D3B320FF4CB4008F3767 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F58D3B120FF4CB4008F3767 /* baiduyunios */,
+				9F58D3C320FF4CB5008F3767 /* baiduyuniosDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F58D3AE20FF4CB4008F3767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F58D3BB20FF4CB4008F3767 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F58D3AD20FF4CB4008F3767 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		9F58D3B020FF4CB4008F3767 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		9F58D3BF20FF4CB5008F3767 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F58D3AB20FF4CB4008F3767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F58D3C020FF4CB5008F3767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F58D3DC20FF4CB5008F3767 /* MDCycriptManager.m in Sources */,
+				9F58D3E420FF4CB5008F3767 /* ANYMethodLog.m in Sources */,
+				9F58D3D820FF4CB5008F3767 /* MDConfigManager.m in Sources */,
+				9F58D3E920FF4CB5008F3767 /* LLDBTools.mm in Sources */,
+				9F58D3F720FF4CB5008F3767 /* baiduyuniosDylib.m in Sources */,
+				9F58D3D320FF4CB5008F3767 /* baiduyuniosDylib.mm in Sources */,
+				9F9885F921003CA300214EF7 /* NSObject+kmHookBlock.m in Sources */,
+				9F58D3E020FF4CB5008F3767 /* MDMethodTrace.m in Sources */,
+				9F58D3F120FF4CB5008F3767 /* fishhook.c in Sources */,
+				9F58D3EE20FF4CB5008F3767 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F58D3C720FF4CB5008F3767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F58D3C320FF4CB5008F3767 /* baiduyuniosDylib */;
+			targetProxy = 9F58D3C620FF4CB5008F3767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F58D3F820FF4CB5008F3767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F58D3F920FF4CB5008F3767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F58D3FB20FF4CB5008F3767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74YUQF4FAH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baiduyuniosDylib/baiduyuniosDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libbaiduyuniosDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"baiduyuniosDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		9F58D3FC20FF4CB5008F3767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 74YUQF4FAH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baiduyuniosDylib/baiduyuniosDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libbaiduyuniosDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"baiduyuniosDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F58D3FE20FF4CB5008F3767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74YUQF4FAH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = baiduyunios/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allen.baiduyunios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F58D3FF20FF4CB5008F3767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74YUQF4FAH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = baiduyunios/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allen.baiduyunios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F58D3AA20FF4CB4008F3767 /* Build configuration list for PBXProject "baiduyunios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F58D3F820FF4CB5008F3767 /* Debug */,
+				9F58D3F920FF4CB5008F3767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F58D3FA20FF4CB5008F3767 /* Build configuration list for PBXNativeTarget "baiduyuniosDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F58D3FB20FF4CB5008F3767 /* Debug */,
+				9F58D3FC20FF4CB5008F3767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F58D3FD20FF4CB5008F3767 /* Build configuration list for PBXNativeTarget "baiduyunios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F58D3FE20FF4CB5008F3767 /* Debug */,
+				9F58D3FF20FF4CB5008F3767 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F58D3A720FF4CB4008F3767 /* Project object */;
+}
