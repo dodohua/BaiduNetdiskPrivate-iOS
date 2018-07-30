@@ -26,23 +26,6 @@
 CHConstructor{
     NSLog(INSERT_SUCCESS_WELCOME);
     
-//    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-//
-//#ifndef __OPTIMIZE__
-//        CYListenServer(6666);
-//
-//        MDCycriptManager* manager = [MDCycriptManager sharedInstance];
-//        [manager loadCycript:NO];
-//
-//        NSError* error;
-//        NSString* result = [manager evaluateCycript:@"UIApp" error:&error];
-//        NSLog(@"result: %@", result);
-//        if(error.code != 0){
-//            NSLog(@"error: %@", error.localizedDescription);
-//        }
-//#endif
-//
-//    }];
     
     Class tarClass = NSClassFromString(@"DownOperation");
     [tarClass hookSelectorWithBlock:PAIR_LIST {
@@ -113,13 +96,20 @@ CHConstructor{
         },
         NIL_PAIR}];
     
-    
-    
-    
-    
+    tarClass = NSClassFromString(@"ASIHTTPRequest");
+    [tarClass hookSelectorWithBlock:PAIR_LIST {
+        @selector(url),
+        BLOCK_CAST ^id (id slf) {
+            NSURL * url = performSuperSelector(slf, @selector(url), id,nil);
+//            NSString *orgUrlStr = url.absoluteString;
+            NSString *strURL = [url.absoluteString stringByReplacingOccurrencesOfString:@"https://" withString:@"http://"];
+            NSURL *newUrl = [NSURL URLWithString:strURL];
+//            NSLog(@"org:%@ url_hook %@",orgUrlStr,newUrl);
+            return newUrl;
+        },
+        NIL_PAIR}];
     
 }
-
 
 CHDeclareClass(CustomViewController)
 
