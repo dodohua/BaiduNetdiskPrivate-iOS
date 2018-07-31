@@ -1,5 +1,5 @@
 # BaiduNetdiskPrivate-iOS  
-基于iOS版百度云盘的解除本地p2p限速，可同时下载多个项目
+基于iOS版百度云盘的解除本地p2p限速，加速下载速度，可同时下载多个项目
 * 百度网盘的ipa，自己下载个脱壳的放到对应目录
 * 项目依赖[theos](https://github.com/theos/theos)和[MonkeyDev](https://github.com/AloneMonkey/MonkeyDev)
 * hook方法使用我自己写的[KMHookBlock](https://github.com/dodohua/KMHookBlock) 方便hook方法
