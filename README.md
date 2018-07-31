@@ -17,7 +17,9 @@ brew install dpkg ldid
 sudo git clone --recursive https://github.com/theos/theos.git /opt/theos  
 ```      
 然后把/opt/theos的权限改为自己所拥有 
+```
 sudo chown $(id -u):$(id -g) /opt/theos
+```
 **最后把theos的执行路径加入到环境变量中,在~/.bash_profile中加入两行代码 **
 
 ```
